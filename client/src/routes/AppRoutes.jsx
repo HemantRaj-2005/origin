@@ -5,8 +5,7 @@ import Services from '../pages/Services';
 import Blog from '../pages/Blog';
 import Resources from '../pages/Resources';
 import Contact from '../pages/Contact';
-import SignUp from '../pages/SignUp';
-import SignIn from '../pages/SignIn';
+
 
 const AppRoutes = () => {
   return (
@@ -17,8 +16,6 @@ const AppRoutes = () => {
       <Route path="/blog" element={<Blog />} />
       <Route path="/resources" element={<Resources />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/signup" element={<SignUp />} />
-      <Route path="/signin" element={<SignIn />} />
     </Routes>
   );
 };

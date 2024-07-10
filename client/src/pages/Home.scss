@@ -1,0 +1,134 @@
+.home-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; // Align items to the left
+  padding-left: 2rem; // Add padding to align content to the left
+  color: white;
+  background-color: black;
+
+  .background-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+  }
+
+  .content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 50%; // Ensure content stays on the left side
+
+    .title {
+      font-size: 3rem; // Reduced text size
+      font-weight: bold;
+
+      span {
+        display: inline-block;
+        white-space: nowrap;
+      }
+    }
+
+    .subtitle {
+      font-size: 1.5rem; // Reduced text size
+    }
+
+    .description {
+      font-size: 1.2rem; // Reduced text size
+    }
+
+    .button-group {
+      display: flex;
+      gap: 1rem; // Add some space between buttons
+      margin-top: 1rem; // Add margin to separate from text
+
+      .play-button, .contact-button {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        border: 2px solid transparent; // Initial border color
+        background: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        color: #ffa500;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(45deg, #ffa500, #ff6347);
+          z-index: -1;
+          transition: all 0.3s ease;
+        }
+
+        &:hover:before,
+        &:focus:before {
+          top: 100%;
+        }
+
+        &:hover,
+        &:focus {
+          color: white;
+        }
+
+        &:hover .play-button, &:hover .contact-button,
+        &:focus .play-button, &:focus .contact-button {
+          color: white;
+        }
+      }
+
+      .play-button:before,
+      .contact-button:before {
+        content: "";
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, #ffa500, #ff6347);
+        z-index: -1;
+        transition: all 0.3s ease;
+      }
+
+      .play-button:hover:before,
+      .contact-button:hover:before,
+      .play-button:focus:before,
+      .contact-button:focus:before {
+        top: 0;
+      }
+    }
+  }
+
+  .video-frame {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.typewriter-cursor {
+  color: #ffffff; // Light color for better visibility on dark background
+}
