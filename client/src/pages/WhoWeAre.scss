@@ -1,0 +1,13 @@
+// styles/components/WhoWeAre.scss
+
+#whoWeAre {
+    background-color: #000;
+
+    .container {
+        @apply flex flex-col md:flex-row items-center;
+    }
+
+    .bg-white {
+        @apply bg-opacity-10 backdrop-blur-md p-8 rounded-lg shadow-lg;
+    }
+}

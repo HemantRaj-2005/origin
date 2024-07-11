@@ -24,7 +24,7 @@ const Home = () => {
           <span className='gradient-text'>
             <Typewriter
               words={['\u00A0Growth Potential']}
-              loop={0}
+              loop={4}
               cursor
               cursorStyle='_'
               typeSpeed={70}

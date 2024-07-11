@@ -27,7 +27,7 @@
     max-width: 50%; // Ensure content stays on the left side
 
     .title {
-      font-size: 3rem; // Reduced text size
+      font-size: 2rem; // Reduced text size
       font-weight: bold;
 
       span {
@@ -41,7 +41,7 @@
     }
 
     .description {
-      font-size: 1.2rem; // Reduced text size
+      font-size: 1.1rem; // Reduced text size
     }
 
     .button-group {
@@ -129,6 +129,4 @@
   text-fill-color: transparent;
 }
 
-.typewriter-cursor {
-  color: #ffffff; // Light color for better visibility on dark background
-}
+
