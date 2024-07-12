@@ -1,7 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaTwitter, FaInstagram, FaBehance, FaDribbble } from "react-icons/fa";
+import { FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { navItems } from "../utils/constants";
 
 const Navbar = () => {
@@ -19,7 +19,6 @@ const Navbar = () => {
             <span className="text-4xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-orange-800 shadow-lg shadow-orange-800/50">
               LevelUpOrigin
             </span>
-
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
@@ -34,11 +33,15 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="hidden lg:flex space-x-4">
-            <FaFacebookF className="hover:text-gray-300 transition-colors duration-300" />
-            <FaTwitter className="hover:text-gray-300 transition-colors duration-300" />
-            <FaInstagram className="hover:text-gray-300 transition-colors duration-300" />
-            <FaBehance className="hover:text-gray-300 transition-colors duration-300" />
-            <FaDribbble className="hover:text-gray-300 transition-colors duration-300" />
+            <a href="https://www.instagram.com/mayank.chaubey09/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="text-pink-600 hover:text-pink-800 transition-colors duration-300 text-xl" />
+            </a>
+            <a href="https://www.youtube.com/@Unfilteredmayank24" target="_blank" rel="noopener noreferrer">
+              <FaYoutube className="text-red-600 hover:text-red-800 transition-colors duration-300 text-xl" />
+            </a>
+            <a href="https://www.linkedin.com/in/mayank-chaubey-8888a321a/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="text-blue-700 hover:text-blue-900 transition-colors duration-300 text-xl" />
+            </a>
           </div>
           <div className="lg:hidden flex flex-col justify-end">
             <button onClick={toggleNavbar} className="text-white">
@@ -62,11 +65,16 @@ const Navbar = () => {
               ))}
             </ul>
             <div className="mt-8 flex space-x-4">
-              <FaFacebookF className="hover:text-gray-300 transition-colors duration-300" />
-              <FaTwitter className="hover:text-gray-300 transition-colors duration-300" />
-              <FaInstagram className="hover:text-gray-300 transition-colors duration-300" />
-              <FaBehance className="hover:text-gray-300 transition-colors duration-300" />
-              <FaDribbble className="hover:text-gray-300 transition-colors duration-300" />
+              <a href="https://www.instagram.com/mayank.chaubey09/" target="_blank" rel="noopener noreferrer">
+                <FaInstagram className="text-pink-600 hover:text-pink-800 transition-colors duration-300 text-xl" />
+              </a>
+              <a href="https://www.youtube.com/@Unfilteredmayank24" target="_blank" rel="noopener noreferrer ">
+                <FaYoutube className="text-red-600 hover:text-red-800 transition-colors duration-300 text-xl" />
+              </a>
+              <a href="https://www.linkedin.com/in/mayank-chaubey-8888a321a/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin className="text-blue-700 hover:text-blue-900 transition-colors duration-300 text-xl" />
+              </a>
+
             </div>
           </div>
         )}

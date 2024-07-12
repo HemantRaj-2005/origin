@@ -8,7 +8,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleContactButtonClick = () => {
-    navigate('/contacts');
+    navigate('/contact');
   };
 
   return (

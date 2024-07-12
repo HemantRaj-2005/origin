@@ -1,0 +1,125 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #121212;
+    color: #ffffff;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .contact-info {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .contact-info .center {
+    text-align: center;
+  }
+  
+  .contact-info h2, .contact-info h3, .contact-info h4 {
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    margin-bottom: 15px;
+  }
+  
+  .contact-info p strong {
+    font-weight: bold;
+  }
+  
+  .contact-form {
+    flex: 1;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+  }
+  
+  .contact-form input[type="submit"] {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.875em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .icon {
+    font-size: 2em;
+    transition: color 0.3s ease;
+  }
+  
+  .icon.instagram {
+    color: #e4405f;
+  }
+  
+  .icon.instagram:hover {
+    color: #c13584;
+  }
+  
+  .icon.linkedin {
+    color: #0077b5;
+  }
+  
+  .icon.linkedin:hover {
+    color: #005582;
+  }
+  
+  .success-message {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInOut 3s;
+  }
+  
+  @keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  
