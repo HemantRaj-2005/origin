@@ -67,7 +67,7 @@ const Contact = () => {
         <h4>Connect With Us</h4>
         <p>Follow us on social media to stay updated on the latest news, tips, and insights:</p>
         <div className="social-icons">
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/mayank.chaubey09/" target="_blank" rel="noopener noreferrer">
             <FaInstagram className="icon instagram" />
           </a>
           <a href="https://www.linkedin.com/in/mayank-chaubey-8888a321a/" target="_blank" rel="noopener noreferrer">

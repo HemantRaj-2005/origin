@@ -28,7 +28,7 @@ const AboutUs = () => {
             <span className="gradient-text">
               <Typewriter
                 words={['Empowering creators to achieve sustainable growth through organic strategies.']}
-                loop={1}
+                loop={3}
                 cursor
                 cursorStyle='_'
                 typeSpeed={20}

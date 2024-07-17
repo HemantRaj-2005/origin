@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import backgroundImage from '../assets/background.jpg';
+import logo from '../assets/logo.jpeg'; // Importing the logo
 import './Home.scss';
 import { Typewriter } from 'react-simple-typewriter';
 import { FaPlay, FaPhone } from 'react-icons/fa';
@@ -19,6 +20,7 @@ const Home = () => {
         className="background-image"
       />
       <div className="content">
+        <img src={logo} alt="Logo" className="logo" /> {/* Logo added here */}
         <h1 className="title">
           Unlock Your Digital
           <span className='gradient-text'>

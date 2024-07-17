@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { navItems } from "../utils/constants";
+import logo from '../assets/logo.jpeg'; // Importing the logo
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -16,6 +17,7 @@ const Navbar = () => {
       <div className="container px-4 mx-auto relative lg:text-sm">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
+            <img src={logo} alt="Logo" className="w-12 h-12 rounded-full mr-2" /> {/* Logo with circular styling */}
             <span className="text-4xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-orange-800 shadow-lg shadow-orange-800/50">
               LevelUpOrigin
             </span>
@@ -74,7 +76,6 @@ const Navbar = () => {
               <a href="https://www.linkedin.com/in/mayank-chaubey-8888a321a/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="text-blue-700 hover:text-blue-900 transition-colors duration-300 text-xl" />
               </a>
-
             </div>
           </div>
         )}
